@@ -7,6 +7,11 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
 }
+.input-small {
+  width: 50px;
+  height: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
 .title {
   text-align: center;
   color: #01074c;
@@ -28,20 +33,20 @@
 }
 
 .custom-button {
-  background-color: #4CAF50; /* cor de fundo */
-  border: none; /* remove a borda */
-  color: white; /* cor do texto */
-  padding: 5px 8px; /* preenchimento do botão */
-  text-align: center; /* centraliza o texto */
-  text-decoration: none; /* remove sublinhado */
-  display: inline-block; /* exibe como um bloco */
-  font-size: 16px; /* tamanho da fonte */
-  margin: 4px 2px; /* margem */
-  transition-duration: 0.4s; /* suaviza a transição */
-  cursor: pointer; /* cursor do mouse */
-  border-radius: 8px; /* borda arredondada */
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 .custom-button:hover {
-  background-color: #45a049; /* cor de fundo ao passar o mouse */
+  background-color: #45a049;
 }
