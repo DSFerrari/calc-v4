@@ -1,6 +1,10 @@
-<form>
+
+<div class="calculator">
+  <div class="title">
+    <h1>Calculadora 2024</h1>
+</div>
 <input type="number" [(ngModel)]="num1" name="num1">
-  <select id="opcoes" name="opcoes">
+  <select id="opcoes" name="opcoes" [(ngModel)]="selectedOption">
       <option value="Somar">Somar</option>
       <option value="Dividir">Dividir</option>
       <option value="Subtrair">Subtrair</option>
@@ -9,6 +13,7 @@
       <option value ="Resto da divisão">Resto da divisão</option>
   </select>
 <input type="number" [(ngModel)]="num2" name="num2">
-  <button (click)="onClicksum()">Resultado</button>
-  {{sum}}
-</form>
+<button class = "custom-button" (click)="calculate()">Calcular</button>
+    <p>Resultado: {{ result }}</p>
+
+

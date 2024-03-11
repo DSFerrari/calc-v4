@@ -11,7 +11,7 @@ describe('FormCalcComponent', () => {
       declarations: [FormCalcComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(FormCalcComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
