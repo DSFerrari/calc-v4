@@ -13,7 +13,18 @@ export class FormCalcComponent {
   result: number | null = null;
 
 
+  playSound() {
+    const audio = new Audio();
+    audio.src = '../assets/som.mp3';
+    audio.load();
+    audio.play();
+  }
+
   calculate() {
+    const audio = new Audio();
+    audio.src = '../assets/som.mp3';
+    audio.load();
+    audio.play();
     switch (this.selectedOption) {
       case 'Somar':
         this.result = this.num1 + this.num2;
