@@ -31,7 +31,10 @@
       text-shadow: 0 0 20px #fff, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de;
   }
 }
-
+.container{
+  width: 700px;
+  align-items: center;
+}
 .custom-button {
   background-color: #4CAF50;
   border: none;

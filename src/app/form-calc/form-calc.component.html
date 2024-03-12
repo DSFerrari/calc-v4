@@ -1,9 +1,9 @@
-
+<div class="container">
 <div class="calculator">
   <div class="title">
     <h1>Calculadora 2024</h1>
 </div>
-<input type="number" [(ngModel)]="num1" class="input-small" name="num1">
+<input type="number" [(ngModel)]="num1" class="input-small" name="num1"(keydown)="handleNum1KeyDown($event)" (focus)="handleInputFocus('num1')">
   <select id="opcoes" name="opcoes" [(ngModel)]="selectedOption">
       <option value="Somar">Somar</option>
       <option value="Dividir">Dividir</option>
@@ -12,6 +12,23 @@
       <option value="Elevar">Elevar</option>
       <option value ="Resto da divisão">Resto da divisão</option>
   </select>
-<input type="number" [(ngModel)]="num2" class="input-small" name="num2">
+<input type="number" [(ngModel)]="num2" class="input-small" name="num2"(keydown)="handleNum2KeyDown($event)" (focus)="handleInputFocus('num2')" >
 <button class = "custom-button" (click)="calculate()">Calcular</button>
     <p>Resultado: {{ result }}</p>
+    <div>
+      <button (click)="addToNum(1)">1</button>
+      <button (click)="addToNum(2)">2</button>
+      <button (click)="addToNum(3)">3</button>
+      <br><br>
+      <button (click)="addToNum(4)">4</button>
+      <button (click)="addToNum(5)">5</button>
+      <button (click)="addToNum(6)">6</button>
+      <br><br>
+      <button (click)="addToNum(7)">7</button>
+      <button (click)="addToNum(8)">8</button>
+      <button (click)="addToNum(9)">9</button>
+      <br><br>
+      <button (click)="addToNum(0)">0</button>
+      <button (click)="clearNums()">C</button>
+    </div>
+</div>
