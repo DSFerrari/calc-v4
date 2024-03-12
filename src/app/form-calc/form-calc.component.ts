@@ -68,6 +68,15 @@ export class FormCalcComponent {
   }
 
   calculate() {
+    const flash = document.getElementById('flash');
+    if (flash !== null) {
+      flash.style.opacity = '1';
+      setTimeout(() => {
+        flash.style.opacity = '0';
+      }, 200);
+    } else {
+      console.error("Elemento com ID 'flash' não encontrado.");
+    }
     const audio = new Audio();
     audio.src = '../assets/som.mp3';
     audio.load();
